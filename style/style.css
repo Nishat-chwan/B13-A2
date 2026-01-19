@@ -63,9 +63,114 @@ nav .menu a{
     justify-content: center;
     gap: 8px;
 }
+.btn:hover{
+   box-shadow:0 4px 10px rgba(167, 157, 138, 0.7);
+}
 
+/* banner */
+#banner{
+    background-image: url("..//assets/hero-bg.png");
+     background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column; /* stack on small screens */
+    align-items: center;
+    /* justify-content: center; */
+    padding: 80px;
+    height: 760px;
+}
 
+.banner-image {
+    position: relative;
+    width: 80%;       /* responsive width */
+    max-width: 350px;
+    
+}
 
+/* bottom image */
+.img1 {
+  width: 100%;
+    height: auto;
+    display: block;
+    /* z-index: 1; */
+}
+
+/* top image */
+.img2 {
+    position: absolute;
+    margin-left: 119px;
+    z-index: 5; /* above the bottom image */
+    transform: translateY(-250px);
+}
+.btn1 {
+   
+    position: absolute;  /* make it float over banner */
+    width: 75px;
+    height: 38px;
+    border-radius: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #00ff88;
+     /* used gap to get the position correct */
+    /* position relative to bottom image */
+    top: 100px;          
+    /* slightly above .img1 */
+     left: 290px;        
+    /* right side of .img1 (left + width + gap) */
+    z-index: 10;        /* above both images */
+}
+
+.banner-content{
+    max-width: 600px;
+    text-align: center;
+    padding: 20px;
+}
+
+.banner-title{
+    font-size: 70px;
+    font-weight: 700;
+    color: #ffffff;
+}
+.paragraph{
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+.bu{
+     gap: 8px;
+     display: flex;
+     justify-content: center;
+}
+.btn2{
+    background: linear-gradient( #f32170, #d61478,
+    #8b00ff);
+    width: 190px;
+    height: 44px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.btn3{
+      width: 190px;
+     height: 44px;
+      font-size: 16px;
+    font-weight: 600;
+      border-radius: 20px;
+      color: #00ff88;
+      background-color: transparent;
+      border: 1px solid #00ff88;
+      display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
 
 /* to make responsive */
 @media screen and (max-width:576px) {
@@ -84,5 +189,32 @@ nav .menu a{
     }
     .btn{
         display: none;
+    }
+    .banner-title{
+        font-size: 35px;
+    }
+    .btn2{
+        margin-bottom: 5px;
+    } 
+    .banner-image .img1 .img2 .btn1{
+        width: 100%;
+    }
+}
+@media screen and (min-width:577px) and (max-width:972px) {
+     nav {
+        width: 95%;
+    }
+
+    .menu {
+         display: flex;
+    }
+
+    .ham-icon {
+       display: none;
+    }
+    .btn{
+          display: inline-flex;
+    align-items: center;
+    justify-content: center;
     }
 }
