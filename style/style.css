@@ -123,7 +123,7 @@ nav .menu a{
 .banner-content{
     max-width: 600px;
     text-align: center;
-    padding: 20px;
+    padding: 50px;
 }
 
 .banner-title{
@@ -137,11 +137,14 @@ nav .menu a{
     color: #ffffff;
     margin-bottom: 30px;
 }
-.bu{
-     gap: 8px;
-     display: flex;
-     justify-content: center;
+.bu {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 8px;
 }
+
+
 .btn2{
     background: linear-gradient( #f32170, #d61478,
     #8b00ff);
@@ -172,6 +175,67 @@ nav .menu a{
     gap: 5px;
 }
 
+
+
+/* about */
+#about{
+    background-color: #1A0B2E;
+    color: #ffffff;
+    padding: 50px;
+}
+.about-container{
+    max-width: 1360px;
+    margin: 0 auto;
+}
+.about-container h2{
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.about-container p{
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 44px;
+}
+ hr {
+    border: none;
+    height: 1px;
+    background-color: #ffffff;
+    width: 1;   
+    margin: 60px auto;
+}
+.about-box{
+    display: flex;
+    gap: 27px; 
+    
+}
+.about-card{
+    padding: 30px;
+    width: 322px;
+    box-sizing: border-box;
+}
+
+.about-card h4{
+    text-align: center;
+    font-size: 48px;
+    font-weight: 600;
+    color: #00ff88;
+    margin-bottom: 20px;
+    width: 274px;
+    
+}
+.about-card p{
+    width: 274px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+
+
 /* to make responsive */
 @media screen and (max-width:576px) {
     nav {
@@ -196,7 +260,7 @@ nav .menu a{
     .btn2{
         margin-bottom: 5px;
     } 
-    .banner-image .img1 .img2 .btn1{
+    .banner-image{
         width: 100%;
     }
 }
