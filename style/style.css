@@ -1,0 +1,88 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; 
+}
+
+.font-open-sans {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+}
+
+/* navbar */
+header{
+    background-color: #412567;
+    padding: 16px;
+}
+.name-tag{
+    color: white;
+}
+
+/* to make it linearGradient */
+#tag{
+     background: linear-gradient(  #f32170, #d61478,
+    #8b00ff);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  ;
+}
+nav{
+    width: 85% ;
+    max-width: 1360px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .menu{
+    display: flex;
+    list-style-type: none;
+    gap: 32px;
+    align-items: center;
+}
+nav .menu a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #ffffff;
+}
+.ham-icon{
+    display: none;
+}
+.btn{
+    background: linear-gradient( #f32170, #d61478,
+    #8b00ff);
+    width: 135px;
+    height: 44px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+
+
+
+/* to make responsive */
+@media screen and (max-width:576px) {
+    nav {
+        width: 95%;
+    }
+
+    .menu a {
+        display: none;
+    }
+
+    .ham-icon {
+        display: block;
+        color: white;
+        font-size: 26px;
+    }
+    .btn{
+        display: none;
+    }
+}
