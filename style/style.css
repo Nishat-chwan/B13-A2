@@ -207,14 +207,29 @@ nav .menu a{
     width: 1;   
     margin: 60px auto;
 }
+/* .about-box{
+    display: flex;
+    gap: 140px;
+    max-width: 830px;
+    margin: 0 auto;
+} */
 .about-box{
     display: flex;
-    gap: 27px; 
-    
+    justify-content: space-between;
+    /* align-items: stretch; */
+    gap: 40px;         
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-wrap: wrap;    
 }
+
+  
+
+
 .about-card{
     padding: 30px;
-    width: 322px;
+    /* width: 322px; */
     box-sizing: border-box;
 }
 
@@ -224,18 +239,59 @@ nav .menu a{
     font-weight: 600;
     color: #00ff88;
     margin-bottom: 20px;
-    width: 274px;
+    /* width: 274px; */
     
 }
 .about-card p{
-    width: 274px;
+    /* width: 274px; */
     font-size: 16px;
     font-weight: 400;
     color: #ffffff;
 }
 
+/* footer */
+footer{
+     background-image: url("..//assets/footer-bg.png");
+     background-size: cover;
+    background-position: center;
+        height: 350px;
 
+}
+.name{
+    font-size: 60px;
+    font-weight: 700;
+}
+#tg{
+    color: #ffffff;
+}
+footer .footer-content{
+    max-width: 1360px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 120px;
+   
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.icons a{
+    padding-top: 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: white;
+}
 
+.copyright p{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: #FAFAFA;
+}
 /* to make responsive */
 @media screen and (max-width:576px) {
     nav {
@@ -263,6 +319,16 @@ nav .menu a{
     .banner-image{
         width: 100%;
     }
+   .about-box{
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .about-card{
+        width: 100%;
+        max-width: 100%;
+    }
 }
 @media screen and (min-width:577px) and (max-width:972px) {
      nav {
@@ -280,5 +346,15 @@ nav .menu a{
           display: inline-flex;
     align-items: center;
     justify-content: center;
+    }
+    .about-box{
+        display: flex;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .about-card{
+        padding: 5px;
+        
     }
 }
