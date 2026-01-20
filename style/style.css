@@ -223,10 +223,6 @@ nav .menu a{
     margin: 0 auto;
     flex-wrap: wrap;    
 }
-
-  
-
-
 .about-card{
     padding: 30px;
     /* width: 322px; */
@@ -248,6 +244,87 @@ nav .menu a{
     font-weight: 400;
     color: #ffffff;
 }
+/* Why Choose TechWave Section */
+#why {
+    background-color: #230E3D;
+    padding: 90px 20px;
+    min-height: auto;
+}
+
+.Title {
+    font-size: 35px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.why-container {
+    max-width: 1150px;
+    margin: 0 auto;
+    
+}
+
+/* Grid container */
+ .box1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(3, auto); 
+    gap: 20px;
+
+} 
+
+/* Common styles for all grid items */
+.why-item {
+    background-color: #412567;
+    padding: 30px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.why-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.tiTle {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.para {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Specific grid placements - FIXED */
+.audio {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.exclusive {
+    grid-column: span 2;
+    grid-row: span 3; /* Spans rows 1-2 */
+}
+
+.mobile {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+
+
+.resource {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
 
 /* footer */
 footer{
@@ -292,6 +369,7 @@ footer .footer-content{
     font-weight: 400;
     color: #FAFAFA;
 }
+
 /* to make responsive */
 @media screen and (max-width:576px) {
     nav {
@@ -320,15 +398,27 @@ footer .footer-content{
         width: 100%;
     }
    .about-box{
-        flex-direction: column;
-        align-items: center;
-        justify-items: center;
+         margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr)
     }
 
     .about-card{
         width: 100%;
         max-width: 100%;
     }
+      footer .footer-content{
+        padding: 0px ;
+      }
+      .box1{
+                display: grid;
+                gap: 5px;
+                grid-template-columns: repeat(1,1fr);
+            }
+            .audio, .mobile, .exclusive, .resource{
+                grid-column: span 1;
+                grid-row: span 1;
+            }
 }
 @media screen and (min-width:577px) and (max-width:972px) {
      nav {
@@ -357,4 +447,13 @@ footer .footer-content{
         padding: 5px;
         
     }
+    .box1{
+                display: grid;
+                gap: 5px;
+                grid-template-columns: repeat(2,1fr);
+            }
+            .audio, .mobile, .exclusive, .resource{
+                grid-column: span 1;
+                grid-row: span 1;
+            }
 }
