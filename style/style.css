@@ -19,7 +19,7 @@ header{
 }
 
 /* to make it linearGradient */
-#tag{
+.tag{
      background: linear-gradient(  #f32170, #d61478,
     #8b00ff);
     -webkit-text-fill-color: transparent;
@@ -325,7 +325,85 @@ nav .menu a{
   grid-row: span 1;
 }
 
+/* feature */
+#feature{
+    background-color: #1A0B2E;
+    height: 1200px;
+}
+.feature-title{
+    font-size: 42px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 60px;
+}
+.feature-box{
+    padding-top: 60px;
+    max-width: 1460px;
+    
+}
+.feature-card{
+    display: flex;
+    gap: 0px;
+    max-width: 400px;
+    width: 100%;
+}
 
+#feature h4{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+}
+#feature p{
+    padding-top: 8px;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+}
+#feature img{
+    padding-top: 8px;
+    color: #00ff88;
+}
+#feature h6{
+    color: #00ff88;
+    font-size: 10px;
+}
+/* host */
+#host h2{
+    font-size: 42px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 140px;
+    margin-bottom: 60px;
+}
+#host h4{
+    font-size: 25px;
+    font-weight: 500;
+}
+#host p{
+    padding-top: 8px;
+}
+
+.host-content{
+    
+    background-color: #351165;
+    border-radius: 12px;
+    margin: 0 auto;
+    max-width: 1350px;
+    display: flex;
+}
+.host-img{
+    margin-left: 8px;
+    margin-bottom: 8px;
+}
+.host-text{
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    margin-left: 50px;
+}
 /* footer */
 footer{
      background-image: url("..//assets/footer-bg.png");
@@ -400,17 +478,20 @@ footer .footer-content{
    .about-box{
          margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(2, 1fr)
+    grid-template-columns: repeat(2, 1fr);
     }
+    #banner,
+    #feature,
+    footer {
+    min-height: auto;
+    height: auto;
+}
 
     .about-card{
         width: 100%;
         max-width: 100%;
     }
-      footer .footer-content{
-        padding: 0px ;
-      }
-      .box1{
+    .box1{
                 display: grid;
                 gap: 5px;
                 grid-template-columns: repeat(1,1fr);
@@ -419,6 +500,30 @@ footer .footer-content{
                 grid-column: span 1;
                 grid-row: span 1;
             }
+          .feature-box{
+         
+          }  
+    .feature-card{
+               padding-top: 10px;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+            }
+            .host-text{
+                padding-top: 10px;
+            }
+    .host-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+    }
+      footer .footer-content{
+        padding-top: 20px ;
+      }
+      
 }
 @media screen and (min-width:577px) and (max-width:972px) {
      nav {
@@ -447,6 +552,12 @@ footer .footer-content{
         padding: 5px;
         
     }
+    #banner,
+#feature,
+footer {
+    min-height: auto;
+    height: auto;
+}
     .box1{
                 display: grid;
                 gap: 5px;
